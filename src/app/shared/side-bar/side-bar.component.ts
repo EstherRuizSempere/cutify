@@ -1,0 +1,57 @@
+import { Component } from '@angular/core';
+import { MenuItemInterface } from 'src/app/interfaces/menu.interface';
+
+@Component({
+  selector: 'app-side-bar',
+  standalone: true,
+  imports: [],
+  templateUrl: './side-bar.component.html',
+  styleUrls: ['./side-bar.component.css'],
+})
+export class SideBarComponent {
+  mainMenu = {
+    defaultOptions: [
+      {
+        name: 'Home',
+        icon: 'uil uil-estate',
+        router: ['/'],
+      },
+      {
+        name: 'Buscar',
+        icon: 'uil uil-search',
+        router: ['/', 'history'],
+      },
+      {
+        name: 'Tu biblioteca',
+        icon: 'uil uil-chart',
+        router: ['/', 'favorites'],
+      },
+    ] as MenuItemInterface[],
+    accessLink: [
+      {
+        name: 'Crear lista',
+        icon: 'uil-plus-square',
+      },
+      {
+        name: 'Canciones que te gustan',
+        icon: 'uil-heart-medical',
+      },
+    ] as MenuItemInterface[], //Uso el as porque es mas complejo y por tanto
+    //este enfoque es más visual es como un objeto literal
+  };
+
+  customOptions: MenuItemInterface[] = [
+    {
+      name: 'Mi lista nº1',
+      router: ['/'],
+    },
+    {
+      name: 'Mi lista nº2',
+      router: ['/'],
+    },
+    {
+      name: 'Mi lista nº3',
+      router: ['/'],
+    },
+  ]; //declaro el tipo explicitamente pero no lo asigno, no es un objeto literal
+}

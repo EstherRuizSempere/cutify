@@ -1,0 +1,5 @@
+.home-wrapper {
+  margin: 0 0 0 17.5rem;
+  background: var(--main-background-color);
+  min-height: 100vh;
+}
