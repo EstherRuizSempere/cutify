@@ -8,7 +8,7 @@
     >
       @for(item of dataTracks; track item.name){
       <li>
-        {{ item.name }}
+        <app-card-player [track]="item" [mode]="mode"></app-card-player>
       </li>
       }
     </ul>

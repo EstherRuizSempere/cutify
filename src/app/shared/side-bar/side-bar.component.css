@@ -38,7 +38,7 @@
 }
 
 .side-bar__separator.line-separator {
-  border-bottom: solid 1px var(--complementary-color);
+  border-bottom: solid 1px var(--primary-color);
 }
 
 .side-bar__list.list-three .list-wrapper-item {

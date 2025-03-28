@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { TrackModelInterface } from '@core/interfaces/track-model..interface';
 
 @Component({
   selector: 'app-card-player',
@@ -7,4 +8,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './card-player.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CardPlayerComponent { }
+export class CardPlayerComponent {
+  @Input() mode: 'small' | 'big' = 'small';
+  @Input() track: TrackModelInterface = { _id: 0, name: '', album: '', url: '', cover: '' };
+}
