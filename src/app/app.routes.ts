@@ -17,7 +17,7 @@ export const routes: Routes = [
       {
         path: '',
         redirectTo: 'tracks',
-        pathMatch: 'full', 
+        pathMatch: 'full',
       },
       {
         path: 'tracks',
