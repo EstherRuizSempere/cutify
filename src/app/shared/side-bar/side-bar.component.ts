@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 import { MenuItemInterface } from 'src/app/interfaces/menu.interface';
 
 @Component({
   selector: 'app-side-bar',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './side-bar.component.html',
   styleUrls: ['./side-bar.component.css'],
 })
@@ -40,6 +41,7 @@ export class SideBarComponent {
     //este enfoque es más visual es como un objeto literal
   };
 
+  constructor(private router: Router) {}
   customOptions: MenuItemInterface[] = [
     {
       name: 'Mi lista nº1',
@@ -54,4 +56,14 @@ export class SideBarComponent {
       router: ['/'],
     },
   ]; //declaro el tipo explicitamente pero no lo asigno, no es un objeto literal
+
+  goTo($event: any): void {
+    this.router.navigate(['/', 'favorites'], {
+      queryParams: {
+        key1: 'value1',
+        key2: 'value2',
+        key3: 'value3',
+      },
+    });
+  }
 }

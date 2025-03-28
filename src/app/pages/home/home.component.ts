@@ -5,7 +5,7 @@ import { MediaPlayerComponent } from "../../shared/media-player/media-player.com
 import { HeaderUserComponent } from '@shared/header-user/header-user.component';
 @Component({
   selector: 'app-home',
-  imports: [SideBarComponent, RouterOutlet, HeaderUserComponent, MediaPlayerComponent],
+  imports: [SideBarComponent, RouterOutlet, MediaPlayerComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

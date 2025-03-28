@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #8ab2a6;
-    --main-background-color: #3e3f5b94;
-  --secondary-color: #acd3a8;
-  --complementary-color: #3e3f5b;
+  --primary-color: #F38C79;
+    --main-background-color: #007074;
+  --secondary-color: #FFC1B4;
+  --complementary-color: #034C53;
   --dark-color: #1a1a23;
   --light-color: #f8f5e9;
   --font-size-1: 1rem;
@@ -20,8 +20,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: var(--primary-color);
   font-family: var(--font-family-1);
   font-size: var(--font-size-1);
   color: var(--light-color);
+}
+html{
+    background: var(--main-background-color);
+
 }

@@ -2,7 +2,7 @@
   <div><i class="uil uil-ellipsis-h"></i></div>
   <ul class="side-bar__list list-one">
     @for(item of mainMenu.defaultOptions; track item.name){
-    <li>
+    <li [routerLink]="item.router" >
       <div class="list-wrapper-item">
         <i [class]="item.icon"></i>
         <span class="side-bar__list list-label"> {{ item.name }} </span>
