@@ -1,5 +1,5 @@
 .card-player {
-  background-color: var(--primary-color);
+  background-color: var(--complementary-color);
   height: 5rem;
   border-radius: var(--border-radius-1);
   display: flex;
@@ -9,7 +9,7 @@
 }
 
 .card-player:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .card-player .cover {
@@ -44,11 +44,11 @@
 }
 
 .card-player .buttons-player .play-btn {
-  color: var(--light-color);
+  color: var(--dark-color);
   border: 0;
   font-size: 1.15rem;
   border-radius: 2rem;
-  background-color: var(--complementary-color);
+  background-color: var(--secondary-color);
   width: 45px;
   height: 45px;
 }

@@ -1,5 +1,5 @@
 .media-player {
-  background-color: var(--complementary-color);
+  background-color: var(--primary-color);
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -54,7 +54,7 @@
 .media-player--wrapper .artist .track-like .btn-like {
   border: 0;
   background-color: transparent;
-  color: var(--secondary-color);
+  color: red;
   font-size: var(--font-size-2);
   opacity: 0.7;
 }
@@ -68,16 +68,16 @@
 .media-player--wrapper .artist .artist-inside .track-title {
   margin: 0;
   font-weight: 400;
-  font-size: 0.8rem;
-  color: var(--light-color);
+  font-size: 1rem;
+  color: var(--dark-color);
 }
 
 .media-player--wrapper .artist .artist-inside .sub-title {
   margin: 0;
-  font-weight: 300;
-  font-size: 80%;
+  font-weight: 500;
+  font-size: 0.8rem;
   opacity: 0.6;
-  color: var(--light-color);
+  color: var(--dark-color);
 }
 
 .media-player--wrapper .artist .artist-inside .cover {
@@ -105,7 +105,7 @@
 .media-player--wrapper .player-controls-inside .buttons-media .btn {
   background-color: transparent;
   border: 0;
-  color: var(--secondary-color);
+  color: var(--dark-color);
   opacity: 0.7;
   font-size: 1.65rem;
 }

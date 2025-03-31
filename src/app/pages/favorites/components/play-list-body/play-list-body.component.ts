@@ -12,10 +12,24 @@ import { OrderListPipe } from '@shared/pipes/order-list.pipe';
 })
 export class PlayListBodyComponent implements OnInit {
   mockTrackListFavorite: Array<TrackModelInterface> = [];
+  //inicializo el pipe por defecto
+  optionSort: { property: string | null; order: string } = {
+    property: null,
+    order: 'asc',
+  };
 
   ngOnInit(): void {
     const { data }: any = (dataRaw as any).default;
     this.mockTrackListFavorite = data;
-    console.log(data)
+    console.log(data);
+  }
+
+  changeSort(property: string) {
+    const { order } = this.optionSort;
+    this.optionSort = {
+      property: property,
+      order: order === 'asc' ? 'desc' : 'asc',
+    }
+    console.log(this.optionSort);
   }
 }

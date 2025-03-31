@@ -1,10 +1,11 @@
 :root {
-  --primary-color: #F38C79;
-    --main-background-color: #007074;
-  --secondary-color: #FFC1B4;
-  --complementary-color: #034C53;
-  --dark-color: #1a1a23;
-  --light-color: #f8f5e9;
+  --primary-color: #8169FF ;
+  --secondary-color: #C5BAFF ;
+  --main-background-color: #c1d6ffeb ;
+  --complementary-secondary-color: #b5cefc ;
+  --complementary-color: #6A9FFF;
+  --dark-color: #322D2D;
+  --light-color: #FBFBFB;
   --font-size-1: 1rem;
   --font-size-2: 1.2rem;
   --font-size-3: 1.3rem;
@@ -22,7 +23,7 @@ body {
   padding: 0;
   font-family: var(--font-family-1);
   font-size: var(--font-size-1);
-  color: var(--light-color);
+  color: var(--dark-color);
 }
 html{
     background: var(--main-background-color);
