@@ -1,9 +1,10 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { TrackModelInterface } from '@core/interfaces/track-model..interface';
+// import { ImgBrokenDirective } from '@shared/directives/img-broken.directive';
 
 @Component({
   selector: 'app-card-player',
-  imports: [],
+  // imports: [ImgBrokenDirective],
   templateUrl: './card-player.component.html',
   styleUrl: './card-player.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
