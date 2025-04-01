@@ -9,6 +9,7 @@ export const routes: Routes = [
   {
     path: 'auth',
     component: AuthComponent,
+
   },
   {
     path: '',
@@ -35,6 +36,6 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '',
+    redirectTo: '/auth/login',
   },
 ];

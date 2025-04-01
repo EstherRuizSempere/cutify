@@ -22,7 +22,7 @@
 @if(mode === 'big'){
 <div class="card-player player-big">
   <!-- Implementar appImgBroken -->
-  <img [src]="track.cover" alt="" class="cover" />
+  <img appImgBroken [src]="track.cover" alt="" class="cover" />
 
   <div class="content-player">
     <div class="title-track">{{ track.name }}</div>
