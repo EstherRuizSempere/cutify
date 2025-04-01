@@ -1,15 +1,17 @@
 <div class="tracks-page">
   <!-- top section (para los componentes pequeños) -->
   <app-generic-secction
-    [dataTracks]="mockTrackList"
+    [dataTracks]="tracksTrending"
     [mode]="'small'"
     [title]="'¡La mejor música del momento!'"
   ></app-generic-secction>
 
   <!-- middle section (components grandes) -->
   <app-generic-secction
-    [dataTracks]="mockTrackList"
+    [dataTracks]="tracksRandom"
     [mode]="'big'"
     [title]="'¡Lo mejor de Electrónica!'"
   ></app-generic-secction>
 </div>
+
+{{ tracksTrending | json}}

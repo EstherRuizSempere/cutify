@@ -15,5 +15,5 @@ export class GenericSecctionComponent {
 
   @Input() title: string = '';
   @Input() mode: 'small' | 'big' = 'big'; //es como una ternaria y por defect dir'e que es big
-  @Input() dataTracks: Array<TrackModelInterface> = [];
+  @Input() dataTracks: TrackModelInterface[] = [];
 }
