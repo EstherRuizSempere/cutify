@@ -1,8 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import * as dataRaw from '../../../../data/track.json';
-import { TrackModelInterface } from '@core/interfaces/track-model..interface';
-import { NgTemplateOutlet } from '@angular/common';
-import { OrderListPipe } from '@shared/pipes/order-list.pipe';
+import {Component, Input, OnInit} from '@angular/core';
+import {TrackModelInterface} from '@core/interfaces/track-model..interface';
+import {NgTemplateOutlet} from '@angular/common';
+import {OrderListPipe} from '@shared/pipes/order-list.pipe';
 
 @Component({
   selector: 'app-play-list-body',
@@ -11,7 +10,7 @@ import { OrderListPipe } from '@shared/pipes/order-list.pipe';
   styleUrl: './play-list-body.component.css',
 })
 export class PlayListBodyComponent implements OnInit {
-  mockTrackListFavorite: Array<TrackModelInterface> = [];
+  @Input() tracks: TrackModelInterface[] = [];
   //inicializo el pipe por defecto
   optionSort: { property: string | null; order: string } = {
     property: null,
@@ -19,13 +18,13 @@ export class PlayListBodyComponent implements OnInit {
   };
 
   ngOnInit(): void {
-    const { data }: any = (dataRaw as any).default;
-    this.mockTrackListFavorite = data;
-    console.log(data);
+    console.log('Tracks recibidos:', this.tracks);
+
+
   }
 
   changeSort(property: string) {
-    const { order } = this.optionSort;
+    const {order} = this.optionSort;
     this.optionSort = {
       property: property,
       order: order === 'asc' ? 'desc' : 'asc',

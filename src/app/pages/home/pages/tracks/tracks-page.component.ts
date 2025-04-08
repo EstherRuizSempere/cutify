@@ -3,11 +3,10 @@ import { GenericSecctionComponent } from '../../components/generic-secction/gene
 import { TrackModelInterface } from '@core/interfaces/track-model..interface';
 import { TrackService } from 'src/app/services/track.service';
 import { Subscription } from 'rxjs';
-import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-tracks',
-  imports: [GenericSecctionComponent, JsonPipe],
+  imports: [GenericSecctionComponent],
   templateUrl: './tracks-page.component.html',
   styleUrl: './tracks-page.component.css',
 })
@@ -25,6 +24,13 @@ export class TracksPageComponent implements OnInit, OnDestroy {
       .getAllTracks$()
       .subscribe((respuesta: TrackModelInterface[]) => {
         this.tracksTrending = respuesta;
+        console.log('respuesta api', respuesta);
+
+      });
+    this.trackService
+      .getAllTracks$()
+      .subscribe((respuesta: TrackModelInterface[]) => {
+        this.tracksRandom = respuesta;
         console.log('respuesta api', respuesta);
 
       });

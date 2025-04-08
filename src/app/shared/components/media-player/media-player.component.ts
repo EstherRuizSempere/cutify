@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TrackModelInterface } from '@core/interfaces/track-model..interface';
-import { AlbumInterface } from 'src/app/interfaces/album.interface';
 
 @Component({
   selector: 'app-media-player',

@@ -1,8 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { TrackModelInterface } from '@core/interfaces/track-model..interface';
-import { DataTrack } from 'src/app/interfaces/dataTrack.interface';
 import { CardPlayerComponent } from '../card-player/card-player.component';
-import * as dataRaw from '../../../../data/track.json';
 
 
 @Component({

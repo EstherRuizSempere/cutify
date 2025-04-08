@@ -1,0 +1,21 @@
+.search-component {
+  padding: 0 1.5rem;
+}
+
+.search-component input {
+  border: 0;
+  border-radius: 3rem;
+  height: 40px;
+  width: 20rem;
+  padding: 0 .75rem;
+  font-size: 0.90rem;
+}
+.search-component input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.search-component input:hover {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}

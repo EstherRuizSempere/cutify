@@ -2,8 +2,8 @@ import { Routes } from '@angular/router';
 import { AuthComponent } from 'src/app/pages/auth/auth.component';
 import { HomeComponent } from 'src/app/pages/home/home.component';
 import { FavoritesComponent } from './pages/favorites/favorites.component';
-import { HistoryComponent } from './pages/history/history.component';
 import { TracksPageComponent } from './pages/home/pages/tracks/tracks-page.component';
+import {HistoryComponent} from './pages/history/pages/history.component';
 
 export const routes: Routes = [
   {
